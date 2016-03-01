@@ -50,8 +50,8 @@ void shift(struct thread* p, int right)
 
 struct thread pop(struct thread* p)
 {
-	struct thread ret = *p;
 	shift(p, 0);
+	struct thread ret = *p;
 	return ret;
 }
 
@@ -70,7 +70,7 @@ other data structures.
 */
 void system_init()
 {
-	
+	que_pointer = que;	
 }
 
 /*
